@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Coherence</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div id="app">
+    <!-- Header -->
+    <header class="popup-header">
+      <h1><span class="logo">◈</span> Coherence</h1>
+      <p class="subtitle">A ruler, not a judge.</p>
+    </header>
+
+    <!-- Settings bar -->
+    <div class="settings-bar">
+      <label for="threshold-slider">Sensitivity:</label>
+      <input type="range" id="threshold-slider" min="60" max="95" value="85">
+      <span id="threshold-value">85%</span>
+      <button id="btn-clear" class="btn btn-danger" title="Clear all data">⚠</button>
+    </div>
+
+    <!-- Results -->
+    <div id="results" class="results"></div>
+
+    <!-- Stats footer -->
+    <footer class="popup-footer">
+      <span id="node-count">0 nodes</span>
+      <span id="storage-info" class="separator">·</span>
+      <span id="storage-used"></span>
+    </footer>
+
+    <!-- Empty state -->
+    <div id="empty-state" class="empty-state">
+      <div class="empty-icon">◈</div>
+      <p>No contradictions yet.</p>
+      <small>Select text on any page → right-click → "Save to Coherence"</small>
+    </div>
+  </div>
+
+  <!-- Comparison modal -->
+  <div id="comparison-modal" class="modal hidden">
+    <div class="modal-backdrop"></div>
+    <div class="modal-content">
+      <button id="btn-close-modal" class="btn btn-sm">✕</button>
+      <h2 id="modal-title">Contradiction Found</h2>
+      
+      <div class="split-view">
+        <div class="pane pane-old">
+          <div class="pane-header">
+            <span class="badge badge-old">Previous</span>
+            <time id="old-date"></time>
+          </div>
+          <p class="pane-text" id="old-text"></p>
+          <a class="pane-source" id="old-url" target="_blank"></a>
+        </div>
+        
+        <div class="divider">
+          <span class="divider-icon">⟷</span>
+          <span class="divider-score" id="decoherence-score"></span>
+        </div>
+
+        <div class="pane pane-new">
+          <div class="pane-header">
+            <span class="badge badge-new">New</span>
+            <time id="new-date"></time>
+          </div>
+          <p class="pane-text" id="new-text"></p>
+          <a class="pane-source" id="new-url" target="_blank"></a>
+        </div>
+      </div>
+
+      <!-- Highlighted conflicts -->
+      <div id="conflicts-section" class="conflicts-section">
+        <h3>Key Differences</h3>
+        <ul id="conflicts-list" class="conflicts-list"></ul>
+      </div>
+
+      <!-- Overlap section -->
+      <div id="overlap-section" class="overlap-section">
+        <h3>Shared Phrases</h3>
+        <div id="overlap-list" class="overlap-list"></div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="popup.js"></script>
+</body>
+</html>

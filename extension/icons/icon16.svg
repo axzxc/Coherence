@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"><circle cx="8" cy="8" r="7" fill="#6c5ce7"/><text x="8" y="12" text-anchor="middle" font-size="10" fill="white" font-family="sans-serif">◈</text></svg>
+cat > icon48.svg << 'EOF'
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"><rect width="48" height="48" rx="10" fill="#6c5ce7"/><text x="24" y="34" text-anchor="middle" font-size="28" fill="white" font-family="sans-serif">◈</text></svg>
+cat > icon128.svg << 'EOF'
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128"><rect width="128" height="128" rx="24" fill="#6c5ce7"/><text x="64" y="90" text-anchor="middle" font-size="72" fill="white" font-family="sans-serif">◈</text></svg>

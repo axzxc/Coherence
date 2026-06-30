@@ -1,0 +1,29 @@
+{
+  "extName": {
+    "message": "Coherence — Living History"
+  },
+  "extDesc": {
+    "message": "A ruler, not a judge. See where your sources disagree."
+  },
+  "saveNode": {
+    "message": "Save to Coherence"
+  },
+  "compareNodes": {
+    "message": "Compare with past snippet"
+  },
+  "popupTitle": {
+    "message": "Your Coherence Timeline"
+  },
+  "noContradictions": {
+    "message": "No contradictions found yet. Keep saving snippets."
+  },
+  "thresholdLabel": {
+    "message": "Similarity threshold (%)"
+  },
+  "storageUsed": {
+    "message": "Storage used"
+  },
+  "clearAll": {
+    "message": "Clear all data"
+  }
+}

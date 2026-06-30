@@ -1,0 +1,30 @@
+/* Content script overlay styles */
+#coherence-fab {
+  position: fixed !important;
+  bottom: 24px;
+  right: 24px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #6c5ce7, #a29bfe);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(108, 92, 231, 0.4);
+  z-index: 999999;
+  transition: all 0.2s ease;
+  opacity: 0;
+  transform: scale(0.5) translateY(20px);
+}
+
+#coherence-fab.visible {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+}
+
+#coherence-fab:hover {
+  transform: scale(1.1) translateY(0) !important;
+  box-shadow: 0 6px 30px rgba(108, 92, 231, 0.6);
+}

@@ -1,0 +1,13 @@
+{
+  "name": "coherence-extension",
+  "version": "0.1.0",
+  "description": "A ruler, not a judge — personal diff-checking browser extension",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"No tests yet\" && exit 0"
+  },
+  "keywords": ["browser-extension", "privacy", "fact-checking", "coherence"],
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {}
+}
